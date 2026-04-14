@@ -1,0 +1,12 @@
+{
+  "name": "summitlink-telecom",
+  "version": "1.0.0",
+  "description": "USSD fintech backend with website",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}
