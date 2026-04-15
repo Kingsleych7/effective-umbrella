@@ -1,10 +1,58 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <title>Summitlink Telecom Ltd</title>
-</head>
-<body>
-  <h1>Welcome to Summitlink Telecom</h1>
-  <p>We provide USSD-based financial and telecom services in Nigeria.</p>
-</body>
-</html>
+app.get("/", (req, res) => {
+  res.send(`
+    <html>
+      <head>
+        <title>Summitlink Telecom Ltd</title>
+        <style>
+          body {
+            font-family: Arial;
+            background: #0f172a;
+            color: white;
+            text-align: center;
+            padding: 40px;
+          }
+          .container {
+            max-width: 800px;
+            margin: auto;
+          }
+          h1 {
+            color: #38bdf8;
+          }
+          .card {
+            background: #1e293b;
+            padding: 20px;
+            margin-top: 20px;
+            border-radius: 10px;
+          }
+        </style>
+      </head>
+      <body>
+        <div class="container">
+          <h1>Summitlink Telecom Ltd</h1>
+          <p>Providing reliable USSD and digital telecom services in Nigeria</p>
+
+          <div class="card">
+            <h2>Our Services</h2>
+            <p>• USSD Financial Services</p>
+            <p>• Airtime & Data Solutions</p>
+            <p>• Payment Integration</p>
+          </div>
+
+          <div class="card">
+            <h2>About Us</h2>
+            <p>
+              Summitlink Telecom Ltd is a Nigerian-based digital service provider
+              focused on delivering accessible financial and telecom solutions
+              through USSD and web technologies.
+            </p>
+          </div>
+
+          <div class="card">
+            <h2>Contact</h2>
+            <p>Email: summitlink@email.com</p>
+          </div>
+        </div>
+      </body>
+    </html>
+  `);
+});
