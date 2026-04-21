@@ -1,60 +1,33 @@
-app.get("/", (req, res) => {
-  res.send(`
-    <html>
-      <head>
-        <title>Summitlink Telecom Ltd</title>
-        <style>
-          body {
-            font-family: Arial;
-            background: #0f172a;
-            color: white;
-            text-align: center;
-            padding: 40px;
-          }
-          .container {
-            max-width: 800px;
-            margin: auto;
-          }
-          h1 {
-            color: #38bdf8;
-          }
-          .card {
-            background: #1e293b;
-            padding: 20px;
-            margin-top: 20px;
-            border-radius: 10px;
-          }
-        </style>
-      </head>
-      <body>
-        <div class="container">
-          <h1>Summitlink Telecom Ltd</h1>
-          <p>Providing reliable USSD and digital telecom services in Nigeria</p>
+<!DOCTYPE html>
+<html>
+<head>
+  <title>SummitLink</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body { font-family: Arial; margin:0; background:#0f172a; color:white; }
+    header { padding:20px; text-align:center; background:#020617; }
+    h1 { margin:0; }
+    .hero { padding:60px; text-align:center; }
+    .btn { padding:12px 20px; background:#22c55e; color:white; border:none; cursor:pointer; }
+  </style>
+</head>
+<body>
 
-          <div class="card">
-            <h2>Our Services</h2>
-            <p>• USSD Financial Services</p>
-            <p>• Airtime & Data Solutions</p>
-            <p>• Payment Integration</p>
-          </div>
+<header>
+  <h1>SummitLink</h1>
+</header>
 
-          <div class="card">
-            <h2>About Us</h2>
-            <p>
-              Summitlink Telecom Ltd is a Nigerian-based digital service provider
-              focused on delivering accessible financial and telecom solutions
-              through USSD and web technologies.
-            </p>
-          </div>
+<div class="hero">
+  <h2>Smart USSD & Fintech Solutions</h2>
+  <p>Fast. Secure. Reliable.</p>
+  <button class="btn" onclick="contact()">Contact Support</button>
+</div>
 
-          <h2>Contact</h2>
-<p>Email: summitlinktelecom@gmail.com</p>
-<p>Phone: +234 XXX XXX XXXX</p>
-            
-            <p>Email: summitlink@email.com</p>
-          </div>
-        </div>
-      </body>
-    </html>
-  `);
-});
+<script>
+function contact(){
+  window.location.href = "/support.html";
+}
+</script>
+
+</body>
+</html>
